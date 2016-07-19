@@ -10,13 +10,13 @@ import {
   StyleSheet,
   Text,
   View,
-  WebView
+  WebView,
 } from 'react-native';
 
 class knowbita extends Component {
   render() {
     return (
-      <WebView source={{uri: 'https://www.knowbita.cpe.ku.ac.th'}} />
+      <WebView source={{uri: 'https://www.knowbita.cpe.ku.ac.th'}} style={styles.container}/>
     );
   }
 }
@@ -27,16 +27,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
